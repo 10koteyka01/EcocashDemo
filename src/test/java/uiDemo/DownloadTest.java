@@ -1,7 +1,7 @@
 package uiDemo;
 
 import org.junit.jupiter.api.Test;
-import pageObjects.pages.aboutUs.DownloadsPage;
+import webPageObjects.pages.aboutUs.DownloadsPage;
 
 import java.io.File;
 import java.io.FileNotFoundException;

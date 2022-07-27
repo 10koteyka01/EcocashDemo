@@ -2,12 +2,12 @@ package uiDemo;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import pageObjects.pages.MainPage;
-import pageObjects.pages.aboutUs.DownloadsPage;
+import webPageObjects.pages.MainPage;
+import webPageObjects.pages.aboutUs.DownloadsPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static io.qameta.allure.Allure.step;
-import static pageObjects.pages.BasePage.getPageTitle;
+import static webPageObjects.pages.BasePage.getPageTitle;
 
 public class HeaderMenuTest extends BaseUITest{
     @ParameterizedTest
@@ -21,13 +21,5 @@ public class HeaderMenuTest extends BaseUITest{
         step("Redirect checks", () -> {
             getPageTitle().shouldHave(text(menuItem));
         });
-    }
-
-    void blahTest() {
-        DownloadsPage downloadsPage = new DownloadsPage();
-
-        downloadsPage.openPage();
-
-//        downloadsPage
     }
 }

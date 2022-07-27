@@ -20,10 +20,10 @@
         <selenide.version>6.4.0</selenide.version>
         <allure-junit5.version>2.17.3</allure-junit5.version>
         <allure-maven.version>2.10.0</allure-maven.version>
-        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
         <aspectj.version>1.9.8</aspectj.version>
         <slf4j-simple.version>1.6.4</slf4j-simple.version>
-
+        <io.appium.version>8.1.1</io.appium.version>
     </properties>
 
     <dependencies>
@@ -54,6 +54,12 @@
             <version>${aspectj.version}</version>
             <scope>runtime</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${io.appium.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -63,6 +69,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
+                    <useSystemClassLoader>false</useSystemClassLoader>
                     <testFailureIgnore>false</testFailureIgnore>
                     <argLine>
                         -Dfile.encoding=UTF-8

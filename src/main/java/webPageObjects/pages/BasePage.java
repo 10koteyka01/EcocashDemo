@@ -1,8 +1,7 @@
-package pageObjects.pages;
+package webPageObjects.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
-import io.qameta.allure.Step;
 
 import java.io.FileReader;
 import java.io.IOException;

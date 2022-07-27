@@ -1,4 +1,4 @@
-package pageObjects.menu;
+package webPageObjects.menu;
 
 import io.qameta.allure.Step;
 

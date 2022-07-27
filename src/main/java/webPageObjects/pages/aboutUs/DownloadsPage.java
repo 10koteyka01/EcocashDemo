@@ -1,9 +1,9 @@
-package pageObjects.pages.aboutUs;
+package webPageObjects.pages.aboutUs;
 
 import com.codeborne.selenide.Selectors;
 import com.codeborne.selenide.SelenideElement;
-import pageObjects.menu.HeaderMenuPage;
-import pageObjects.pages.BasePage;
+import webPageObjects.menu.HeaderMenuPage;
+import webPageObjects.pages.BasePage;
 
 import static com.codeborne.selenide.Selenide.$;
 

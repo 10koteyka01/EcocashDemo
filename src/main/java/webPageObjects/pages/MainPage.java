@@ -1,6 +1,6 @@
-package pageObjects.pages;
+package webPageObjects.pages;
 
-import pageObjects.menu.HeaderMenuPage;
+import webPageObjects.menu.HeaderMenuPage;
 
 public class MainPage extends BasePage<HeaderMenuPage> {
     {
