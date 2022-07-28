@@ -1,5 +1,6 @@
 package uiDemo;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import webPageObjects.pages.aboutUs.DownloadsPage;
 
@@ -11,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class DownloadTest extends BaseUITest {
     @Test
+    @Tag("ui")
     void billerRequirementsDownloadTest() {
         DownloadsPage downloadsPage = new DownloadsPage();
 

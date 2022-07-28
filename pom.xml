@@ -24,6 +24,8 @@
         <aspectj.version>1.9.8</aspectj.version>
         <slf4j-simple.version>1.6.4</slf4j-simple.version>
         <io.appium.version>8.1.1</io.appium.version>
+
+        <tags>ui</tags>
     </properties>
 
     <dependencies>
@@ -54,7 +56,6 @@
             <version>${aspectj.version}</version>
             <scope>runtime</scope>
         </dependency>
-
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
@@ -71,6 +72,7 @@
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <testFailureIgnore>false</testFailureIgnore>
+                    <groups>${tags}</groups>
                     <argLine>
                         -Dfile.encoding=UTF-8
                         -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar

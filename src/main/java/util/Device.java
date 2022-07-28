@@ -1,7 +1,7 @@
 package util;
 
 /**
- * Перечисление устройств, доступных для запуска тестов
+ * Enum available devices for tests
  */
 public enum Device {
     HONOR("Honor 8x", "Android", "10.0", "MUENW19417001244", "http://0.0.0.0:4723/wd/hub");

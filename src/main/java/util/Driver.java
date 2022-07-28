@@ -12,6 +12,9 @@ import java.time.Duration;
 
 import static io.qameta.allure.Allure.step;
 
+/**
+ * Class for simplify work with appium
+ */
 public class Driver {
     public static AndroidDriver driver;
     private static Device device;
@@ -42,6 +45,11 @@ public class Driver {
         return capabilities;
     }
 
+    /**
+     * Set up driver for test. By default, it works with honor 8x. To add another device need:
+     * 1. Add it to Enum Device
+     * 2. Add new device name to system variable `deviceName`
+     */
     public static void setUpDriver() {
         quit();
 

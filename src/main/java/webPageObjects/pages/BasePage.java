@@ -11,6 +11,10 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
+/**
+ * Base page for UI tests.
+ * @param <T> - generic type for different headers. By default, it should be {@link webPageObjects.menu.HeaderMenuPage}
+ */
 public class BasePage<T> {
     public T header;
     protected String pagePath;
