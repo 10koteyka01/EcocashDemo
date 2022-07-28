@@ -4,18 +4,18 @@
 
 Real mobile device with sim-card is required. 
 [Mobile application](https://github.com/10koteyka01/UssdTestApp) needs to be preinstalled.
-Application sends *100# query to mobile operator and print response to text view.
-Test send query from mobile device by tap button and check response text. 
+Application sends *100# USSD-query to mobile operator and shows response to text view.
+Test case sends the query from a mobile device by tapping "next" button and validates the response. 
 
-To run test required:
-1. Attach mobile device to pc
+Steps to run test case:
+1. Connect mobile device to pc
 2. Run appium-server
-3. Check that all settings on Device.java are matches to device from the first point
+3. Check that all settings on Device.java are matching to device from the first point
 4. Run test by maven command `mvn test -Dtags=ussd`
 
 <h3>Web UI - tests</h3>
 
-To run test required:
+Steps to run test cases:
 1. Run test by maven command `mvn test -Dtags=ui`
 
 <h3>To run all tests</h3>
