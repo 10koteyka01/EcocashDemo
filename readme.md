@@ -2,7 +2,8 @@
 
 <h3>USSD - tests</h3>
 
-Required real mobile device with sim-card, with preinstalled [mobile application](https://github.com/10koteyka01/UssdTestApp).
+Real mobile device with sim-card is required. 
+[Mobile application](https://github.com/10koteyka01/UssdTestApp) needs to be preinstalled.
 Application sends *100# query to mobile operator and print response to text view.
 Test send query from mobile device by tap button and check response text. 
 
